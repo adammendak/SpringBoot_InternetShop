@@ -1,3 +1,4 @@
 db.sqlite3
 .idea/
 .idea/workspace.xml
+.gitignore
