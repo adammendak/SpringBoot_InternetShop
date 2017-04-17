@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$' , main_views.home , name= 'home'),
     url(r'^helloWorld$', main_views.helloWorld, name='helloWorld'),
-    url(r'^polls/$', include('main.urls'))
+    url(r'^polls/', include('main.urls'))
 ]
