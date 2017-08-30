@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DjangoFirstProject.iml" filepath="$PROJECT_DIR$/.idea/DjangoFirstProject.iml" />
-      <module fileurl="file://C:\Users\adam.mendak\PycharmProjects\PythonTraining\.idea\training.iml" filepath="C:\Users\adam.mendak\PycharmProjects\PythonTraining\.idea\training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFirstPage/JavaFirstPage.iml" filepath="$PROJECT_DIR$/JavaFirstPage/JavaFirstPage.iml" />
+      <module fileurl="file://C:/Users/adam.mendak/PycharmProjects/PythonTraining/.idea/training.iml" filepath="C:/Users/adam.mendak/PycharmProjects/PythonTraining/.idea/training.iml" />
     </modules>
   </component>
 </project>
