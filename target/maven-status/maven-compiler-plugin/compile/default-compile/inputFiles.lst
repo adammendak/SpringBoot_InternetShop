@@ -1,3 +1,6 @@
-/home/adammendak/Workspace/firstWebApp/src/main/java/pl/nauka/Calculator/model/Computable.java
-/home/adammendak/Workspace/firstWebApp/src/main/java/pl/nauka/Calculator/CalculatorAppServlet.java
-/home/adammendak/Workspace/firstWebApp/src/main/java/pl/nauka/Calculator/model/CalculatorInstance.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/pl/nauka/firstApp/model/Customer.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/pl/nauka/firstApp/service/CustomerService.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/Application.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/pl/nauka/firstApp/repository/HibernateCustomerRepositoryImpl.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/pl/nauka/firstApp/repository/CustomerRepository.java
+/home/adammendak/Workspace/firstSpringApp/src/main/java/src/main/java/pl/nauka/firstApp/service/CustomerServiceImpl.java
