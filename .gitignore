@@ -2,3 +2,5 @@ target/
 .idea/
 .idea/workspace.xml
 .gitignore
+.show
+firstSpringApp.iml
