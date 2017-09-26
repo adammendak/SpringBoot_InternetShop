@@ -1,0 +1,11 @@
+.navbar-default {
+    background: turquoise;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand li > a {
+    color: white;
+}
