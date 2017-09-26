@@ -1,4 +1,50 @@
 package src.com.adammendak.ProductRepository.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import src.com.adammendak.ProductRepository.model.Product;
+import src.com.adammendak.ProductRepository.repository.ProductRepository;
+import sun.plugin.perf.PluginRollup;
+
+import java.util.ArrayList;
+
+@Controller
 public class ProductController {
+
+    private ProductRepository productRepository;
+
+    @Autowired
+    public void setProductRepository(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
+    @RequestMapping(path = "/products/add", method = RequestMethod.GET)
+    public String createProduct(Model model) {
+        model.addAttribute("product", new Product());
+        return "layout/edit";
+    }
+
+    @RequestMapping(path = "products", method = RequestMethod.POST)
+    public String saveProduct(Product product) {
+        productRepository.save(product);
+        return "redirect:/";
+    }
+
+    @RequestMapping(path = "/products", method = RequestMethod.GET)
+    public String getAllProducts(Model model) {
+        model.addAttribute("products", productRepository.findAll());
+        return "layout/products";
+    }
+
+    @RequestMapping(path = "/products/edit/{id}", method = RequestMethod.GET)
+    public String editProduct(Model model, @PathVariable(value = "id") String id) {
+        model.addAttribute("product", productRepository.findOne(id));
+        return "layout/edit";
+    }
+
 }
