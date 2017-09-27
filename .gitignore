@@ -1,4 +1,4 @@
 target/
 .idea/
 .show
-SpringBoot_ProductRepository.iml
+*.iml
