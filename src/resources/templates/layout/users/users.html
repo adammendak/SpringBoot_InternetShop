@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Users</title>
+    <th:block th:include="layout/header"></th:block>
+</head>
+<body>
+<div class="container">
+    <div th:if="${not #lists.isEmpty(users)}">
+        <h2 class="text-center">All Users</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Email</th>
+
+            </tr>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}">Id</td>
+                <td th:text="${user.firstName}">First Name</td>
+                <td th:text="${user.lastName}">Last Name</td>
+                <td th:text="${user.address}">Address</td>
+                <th th:text="${user.email}">E-mail</th>
+                <!--<td><a th:href="${'/users/edit/' + users.id}" class="btn btn-default">Edit</a></td>-->
+                <!--<td><a th:href="${'/users/delete/' + users.id}" class="btn btn-danger">Delete</a></td>-->
+            </tr>
+        </table>
+        <h1 class="text-center"> tu jest strona z uzytkownikami</h1>
+    </div>
+</div>
+</body>
+</html>
