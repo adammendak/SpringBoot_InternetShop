@@ -22,7 +22,6 @@ public class DataLoader implements CommandLineRunner{
         Product product1 = new Product();
         product1.setName("Snickers");
         product1.setDescription("chocolate bar");
-        product1.setType("CANDIES");
         product1.setCategory("BARS");
         product1.setPrice(10.0);
 
@@ -31,7 +30,6 @@ public class DataLoader implements CommandLineRunner{
         Product product2 = new Product();
         product2.setName("Milkyway");
         product2.setDescription("self explanatory");
-        product2.setType("CANDIES");
         product2.setCategory("BARS");
         product2.setPrice(7.5);
 

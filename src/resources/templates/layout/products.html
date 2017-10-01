@@ -13,7 +13,6 @@
                     <th>Id</th>
                     <th>Name</th>
                     <th>Description</th>
-                    <th>Type</th>
                     <th>Category</th>
                     <th>Price</th>
                     <th>Edit</th>
@@ -23,7 +22,6 @@
                     <td th:text="${product.id}">Id</td>
                     <td th:text="${product.name}">Name</td>
                     <td th:text="${product.description}">Description</td>
-                    <td th:text="${product.type}">Type</td>
                     <td th:text="${product.category}">Category</td>
                     <td th:text="${product.price}">Price</td>
                     <td><a th:href="${'/products/edit/' + product.id}" class="btn btn-default">Edit</a></td>
