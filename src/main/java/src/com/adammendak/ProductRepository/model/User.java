@@ -18,6 +18,7 @@ public class User {
     private String lastName;
     private String email;
     private String address;
+    private String role;
 
     public User() {
     }
@@ -60,5 +61,13 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
