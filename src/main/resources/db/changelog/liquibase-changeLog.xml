@@ -3,34 +3,20 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
-    
-    <changeSet id="001" author="adammendak">
-        <createTable tableName="product">
-            <column name="id" type="varchar(255)" autoIncrement="false">
-                <constraints primaryKey="true" nullable="false" unique="true"></constraints>
+
+    <changeSet id="001" author="pnowak">
+        <createTable tableName="SP_MEDIA">
+            <column name="UUID" type="varchar(255)" autoIncrement="false">
+                <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="category" type="varchar(255)"></column>
-            <column name="description" type="varchar(255)"></column>
-            <column name="name" type="varchar(255)"></column>
-            <column name="price" type="double"></column>
-        </createTable>
-        <createTable tableName="product_list">
-            <column name="product_list_id" type="int" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false" unique="true"></constraints>
+            <column name="DTYPE" type="varchar(32)"/>
+            <column name="FILENAME" type="varchar(255)">
+                <!--<constraints nullable="false"/>-->
             </column>
-            <column name="category" type="varchar(255)"></column>
-        </createTable>
-        <createTable tableName="user">
-            <column name="id" type="varchar(255)" autoIncrement="false">
-                <constraints primaryKey="true" nullable="false" unique="true"></constraints>
-            </column>
-            <column name="address" type="varchar(255)"></column>
-            <column name="email" type="varchar(255)"></column>
-            <column name="first_name" type="varchar(255)"></column>
-            <column name="last_name" type="varchar(255)"></column>
-            <column name="role" type="varchar(255)"></column>
+            <column name="MIME_TYPE" type="varchar(50)"/>
+            <column name="OWNER" type="varchar(255)"/>
+            <column name="VISIBILITY" type="varchar(50)"/>
         </createTable>
     </changeSet>
-    
 
 </databaseChangeLog>
