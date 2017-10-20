@@ -6,4 +6,5 @@ import javax.persistence.Entity;
 public class Administrator extends User {
 
 
+
 }

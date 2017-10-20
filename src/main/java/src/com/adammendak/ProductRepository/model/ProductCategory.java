@@ -2,23 +2,25 @@ package src.com.adammendak.ProductRepository.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.List;
 
 @Entity
-public class ProductList {
+public class ProductCategory {
 
     @Id
-    private Integer productListId;
+    private Integer productCategoryId;
     private String category;
+//    private List<Product> procuctList;
 
-    public ProductList() {
+    public ProductCategory() {
     }
 
     public Integer getProductListId() {
-        return productListId;
+        return productCategoryId;
     }
 
     public void setProductListId(Integer productListId) {
-        this.productListId = productListId;
+        this.productCategoryId = productListId;
     }
 
     public String getCategory() {

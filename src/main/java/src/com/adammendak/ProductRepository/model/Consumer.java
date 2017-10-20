@@ -6,8 +6,8 @@ import java.util.List;
 @Entity
 public class Consumer extends User {
 
-    private Long creditCardNumber;
-    private String address;
-    private List<Order> orders;
+//    private Long creditCardNumber;
+//    private String address;
+//    private List<Order> orders;
 
 }

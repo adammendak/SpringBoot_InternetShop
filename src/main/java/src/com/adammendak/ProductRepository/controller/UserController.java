@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import src.com.adammendak.ProductRepository.model.Consumer;
 import src.com.adammendak.ProductRepository.model.User;
 import src.com.adammendak.ProductRepository.repository.UserRepository;
 
@@ -26,7 +27,7 @@ public class UserController {
 
     @RequestMapping(path = "/users/add", method = RequestMethod.POST)
     public String addUser(Model model) {
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new Consumer());
         return "layout/users/edit";
     }
 }
