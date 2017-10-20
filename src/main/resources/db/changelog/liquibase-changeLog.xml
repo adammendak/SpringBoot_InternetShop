@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
     
-    <changeSet id="003" author="adammendak">
+    <changeSet id="005" author="adammendak">
         <createTable tableName="product">
             <column name="id" type="varchar(255)" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false" unique="true"></constraints>
@@ -58,6 +58,12 @@
             <column name="password" type="varchar(50)">
                 <constraints nullable="false" unique="false"></constraints>
             </column>
+        </createTable>
+        <createTable tableName="shopping_cart">
+            <column name="id" type="varchar(255)" autoIncrement="false">
+                <constraints primaryKey="true" nullable="false" unique="true"></constraints>
+            </column>
+
         </createTable>
     </changeSet>
     

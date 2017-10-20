@@ -15,8 +15,8 @@ public class ShoppingCart {
     @GeneratedValue( strategy = GenerationType.AUTO, generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
     private String id;
-    private List<Product> products;
-    private Consumer consumer;
+//    private List<Product> products;
+//    private Consumer consumer;
 
 
 }

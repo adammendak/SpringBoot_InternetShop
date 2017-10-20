@@ -12,15 +12,18 @@ public class ProductCategory {
     private String category;
 //    private List<Product> procuctList;
 
-    public ProductCategory() {
+
+    public ProductCategory(Integer productCategoryId, String category) {
+        this.productCategoryId = productCategoryId;
+        this.category = category;
     }
 
-    public Integer getProductListId() {
+    public Integer getProductCategoryId() {
         return productCategoryId;
     }
 
-    public void setProductListId(Integer productListId) {
-        this.productCategoryId = productListId;
+    public void setProductCategoryId(Integer productCategoryId) {
+        this.productCategoryId = productCategoryId;
     }
 
     public String getCategory() {
