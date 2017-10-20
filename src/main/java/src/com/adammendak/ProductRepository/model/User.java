@@ -2,13 +2,11 @@ package src.com.adammendak.ProductRepository.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
-public class User {
+public abstract class User {
 
     @Id
     @GeneratedValue( strategy = GenerationType.AUTO, generator = "system-uuid")
@@ -17,8 +15,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String address;
-    private String role;
+    private String password;
 
     public User() {
     }
@@ -55,19 +52,11 @@ public class User {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

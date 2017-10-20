@@ -1,4 +1,9 @@
 package src.com.adammendak.ProductRepository.model;
 
-public class Administrator {
+import javax.persistence.Entity;
+
+@Entity
+public class Administrator extends User {
+
+
 }
