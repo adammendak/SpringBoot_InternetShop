@@ -38,13 +38,13 @@ public class ProductController {
     }
 
     @RequestMapping(path = "/products/edit/{id}", method = RequestMethod.GET)
-    public String editProduct(Model model, @PathVariable(value = "id") String id) {
+    public String editProduct(Model model, @PathVariable(value = "id") Long id) {
         model.addAttribute("product", productRepository.findOne(id));
         return "layout/edit";
     }
 
     @RequestMapping(path = "/products/delete/{id}", method = RequestMethod.GET)
-    public String deleteProduct( @PathVariable(name = "id") String id) {
+    public String deleteProduct( @PathVariable(name = "id") Long id) {
         productRepository.delete(id);
         return "redirect:/products";
     }

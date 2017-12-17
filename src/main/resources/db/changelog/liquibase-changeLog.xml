@@ -6,7 +6,7 @@
     
     <changeSet id="005" author="adammendak">
         <createTable tableName="product">
-            <column name="id" type="varchar(255)" autoIncrement="false">
+            <column name="id" type="BigInt" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false" unique="true"></constraints>
             </column>
             <column name="category" type="varchar(255)"></column>

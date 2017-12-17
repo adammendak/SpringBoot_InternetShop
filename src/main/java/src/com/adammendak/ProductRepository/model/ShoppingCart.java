@@ -12,11 +12,20 @@ import java.util.List;
 public class ShoppingCart {
 
     @Id
-    @GeneratedValue( strategy = GenerationType.AUTO, generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-    private String id;
+    @GeneratedValue( strategy = GenerationType.AUTO)
+    private Long id;
 //    private List<Product> products;
 //    private Consumer consumer;
 
 
+    public ShoppingCart() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

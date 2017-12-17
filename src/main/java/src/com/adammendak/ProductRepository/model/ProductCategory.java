@@ -1,6 +1,8 @@
 package src.com.adammendak.ProductRepository.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.List;
 
@@ -8,21 +10,35 @@ import java.util.List;
 public class ProductCategory {
 
     @Id
-    private Integer productCategoryId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private Long productCategoryId;
     private String category;
 //    private List<Product> procuctList;
 
 
-    public ProductCategory(Integer productCategoryId, String category) {
+    public ProductCategory(Long productCategoryId, String category) {
         this.productCategoryId = productCategoryId;
         this.category = category;
     }
 
-    public Integer getProductCategoryId() {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public ProductCategory(String category) {
+        this.category = category;
+    }
+
+    public Long getProductCategoryId() {
         return productCategoryId;
     }
 
-    public void setProductCategoryId(Integer productCategoryId) {
+    public void setProductCategoryId(Long productCategoryId) {
         this.productCategoryId = productCategoryId;
     }
 

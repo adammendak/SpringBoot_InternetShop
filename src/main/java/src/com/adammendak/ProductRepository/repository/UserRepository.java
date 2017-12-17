@@ -5,5 +5,7 @@ import org.springframework.stereotype.Repository;
 import src.com.adammendak.ProductRepository.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, String> {
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    User findByUsername (String username);
 }
