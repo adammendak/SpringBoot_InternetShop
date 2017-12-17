@@ -1,3 +1,9 @@
 nav {
   font-size: 15px;
 }
+
+h2 {
+  height: 100%;
+  margin-top: 10px;
+  color: white;
+}
