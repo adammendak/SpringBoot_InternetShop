@@ -3,10 +3,11 @@ package src.com.adammendak.ProductRepository.model.security;
 import src.com.adammendak.ProductRepository.model.User;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "user_role")
-public class UserRole {
+public class UserRole implements Serializable{
 
     private final static long serialNumberUID = 4243212L;
 

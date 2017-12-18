@@ -60,6 +60,19 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>${spring-boot-version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.session/spring-session-data-redis -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/biz.paluch.redis/lettuce -->
+        <dependency>
+            <groupId>biz.paluch.redis</groupId>
+            <artifactId>lettuce</artifactId>
+            <version>4.3.1.Final</version>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>org.webjars</groupId>-->
             <!--<artifactId>bootstrap</artifactId>-->
