@@ -2,7 +2,6 @@ package src.com.adammendak.ProductRepository.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,8 +14,11 @@ public class UserSecurityService implements UserDetailsService {
 
     private static final Logger logger = LoggerFactory.getLogger(UserSecurityService.class);
 
-    @Autowired
     private UserRepository userRepository;
+
+    public UserSecurityService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
