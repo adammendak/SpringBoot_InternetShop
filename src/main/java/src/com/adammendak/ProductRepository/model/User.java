@@ -14,6 +14,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "user")
 public class User implements UserDetails, Serializable{
 
     private static final Long serialVersionUID= 34572346L;

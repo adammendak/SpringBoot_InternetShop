@@ -24,7 +24,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <!-- LIBRARIES -->
-        <liquibase-core.version>3.4.1</liquibase-core.version>
+        <!--<liquibase-core.version>3.4.1</liquibase-core.version>-->
         <spring-boot-version>1.5.7.RELEASE</spring-boot-version>
     </properties>
 
@@ -83,14 +83,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-maven-plugin</artifactId>
-                <version>${liquibase-core.version}</version>
-                <configuration>
-                    <propertyFile>src/main/resources/db/changelog/liquibase.properties</propertyFile>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.liquibase</groupId>-->
+                <!--<artifactId>liquibase-maven-plugin</artifactId>-->
+                <!--<version>${liquibase-core.version}</version>-->
+                <!--<configuration>-->
+                    <!--<propertyFile>src/main/resources/db/changelog/liquibase.properties</propertyFile>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 

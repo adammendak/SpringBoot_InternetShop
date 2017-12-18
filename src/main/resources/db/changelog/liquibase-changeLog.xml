@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
     
-    <changeSet id="005" author="adammendak">
+    <changeSet id="001" author="adammendak">
         <createTable tableName="product">
             <column name="id" type="BigInt" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false" unique="true"></constraints>

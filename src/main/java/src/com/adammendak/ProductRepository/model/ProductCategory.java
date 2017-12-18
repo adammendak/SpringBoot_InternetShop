@@ -16,10 +16,13 @@ public class ProductCategory {
     private String category;
 //    private List<Product> procuctList;
 
+//
+//    public ProductCategory(Long productCategoryId, String category) {
+//        this.productCategoryId = productCategoryId;
+//        this.category = category;
+//    }
 
-    public ProductCategory(Long productCategoryId, String category) {
-        this.productCategoryId = productCategoryId;
-        this.category = category;
+    public ProductCategory() {
     }
 
     public Long getId() {
@@ -30,23 +33,23 @@ public class ProductCategory {
         this.id = id;
     }
 
-    public ProductCategory(String category) {
-        this.category = category;
-    }
-
-    public Long getProductCategoryId() {
-        return productCategoryId;
-    }
-
-    public void setProductCategoryId(Long productCategoryId) {
-        this.productCategoryId = productCategoryId;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
+//    public ProductCategory(String category) {
+//        this.category = category;
+//    }
+//
+//    public Long getProductCategoryId() {
+//        return productCategoryId;
+//    }
+//
+//    public void setProductCategoryId(Long productCategoryId) {
+//        this.productCategoryId = productCategoryId;
+//    }
+//
+//    public String getCategory() {
+//        return category;
+//    }
+//
+//    public void setCategory(String category) {
+//        this.category = category;
+//    }
 }

@@ -2,13 +2,11 @@ package src.com.adammendak.ProductRepository.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "shopping_cart")
 public class ShoppingCart {
 
     @Id

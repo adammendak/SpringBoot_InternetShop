@@ -1,12 +1,12 @@
 package src.com.adammendak.ProductRepository.model.security;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "role")
 public class Role implements Serializable{
 
     private final static long serialNumberUID = 8898978L;
@@ -16,6 +16,7 @@ public class Role implements Serializable{
 
     private String name;
 
+    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<UserRole> userRoles = new HashSet<>();
 
     public Role(int roleId, String name, Set<UserRole> userRoles) {
