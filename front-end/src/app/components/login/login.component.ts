@@ -25,8 +25,8 @@ export class LoginComponent implements OnInit {
       this.loggedIn = true;
       location.reload();
     }, err => {
-      console.log(err)
-    }
+      console.log(err);
+    };
   }
 
   ngOnInit() { }
